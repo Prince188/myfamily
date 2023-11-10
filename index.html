@@ -1,51 +1,86 @@
-<!-- Program to store multiple data using input -->
-<!-- .Basic program of local storage multiple data entry allows. -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500&family=Oswald:wght@600&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Scoreboard example</title>
+    <title>Family</title>
 </head>
 
 <body>
     <div class="main">
-        <div class="item">
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-        </div>
+        <nav>
+            <ul>
+                <li class="item item-active">Home</li>
+                <li class="item">Jayntibhai</li>
+                <li class="item">Nareshbhai</li>
+                <li class="item">Mukeshbhai</li>
+            </ul>
+        </nav>
+        <form action="" method="post">
+            <h4>Please Fill The Information</h4>
+            <div class="in">
+                <div class="pn">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name">
+                </div>
+                <div class="fn">
+                    <label for="name">Father Name:</label>
+                    <input type="text" name="fathername">
+                </div>
+            </div>
+            <div class="in">
+                <div class="birth">
+                    <label for="dob">DOB:</label>
+                    <input type="date" name="dob">
+                </div>
+                <div class="age">
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" readonly>
+                </div>
+            </div>
+            <div class="in">
+                <div class="edu">
+                    <label for="edu">Education:</label>
+                    <input type="text" name="education">
+                </div>
+                <div class="blood">
+                    <label for="bood">Blood Group:</label>
+                    <input type="text" name="blood">
+                </div>
+            </div>
+            <div class="in">
+                <div class="height">
+                    <label for="height">Height:</label>
+                    <input type="text" name="height">
+                </div>
+                <div class="weight">
+                    <label for="weight">Weight:</label>
+                    <input type="number" name="weight">
+                </div>
+            </div>
+            <div class="in">
+                <div class="add">
+                    <label for="add">Address:</label>
+                    <textarea name="addres" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="in">
+                <div class="sub-btn">
+                    <button type="submit">SUBMIT</button>
+                </div>
+                <div class="reset-btn">
+                    <button type="reset">RESET</button>
+                </div>
+            </div>
+        </form>
+        <footer>
+            <div class="creator">
+                Created by Prince Patel
+            </div>
+        </footer>
     </div>
-    <form action="">
-        <h4>Fill informations</h4> <br>
-        <label for="name">Name: </label>
-        <input type="text" name="inputName">
-        <label for="dob">Birthdate: </label>
-        <input type="date" name="inputDOB">
-        <label for="edu">Education: </label>
-        <input type="text" name="inputEdu">
-        <label for="height">Height: </label>
-        <input type="text" name="inputHeight">
-        <label for="height">Weight: </label>
-        <input type="text" name="inputWeight">
-        <label for="add">Address: </label>
-        <textarea name="inputAdd" id="" cols="30" rows="10"></textarea>
-        <div class="buttons">
-            <button type="submit">SAVE</button>
-            <button type="reset">RESET</button>
-        </div>
-    </form>
-    
-    <script src="script.js"></script>
 </body>
 
 </html>
