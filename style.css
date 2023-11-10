@@ -1,61 +1,120 @@
-* {
+*{
     margin: 0;
     padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-body {
+body{
     background-color: #1f1f1f;
+}
+
+nav{
+    background-color: #454545;
+    color: white;
+    font-size: 1.2rem;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav ul{
+    width: 100% !important;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.item{
+    border: 1px solid transparent;
+    padding: .5rem;
+    transition: 0.3s;
+}
+
+.item:hover{
+    border-bottom: 1px solid yellow;
+    color: yellow;
+}
+
+.item-active{
+    border-bottom: 1px solid yellow;
+    color: yellow;
 }
 
 form{
     background-color: ghostwhite;
-    padding: 1rem;
-    border-radius: 10px;
     width: fit-content;
+    margin: 25px auto;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+label{
+    display: block;
+    background-color: ghostwhite;
     height: fit-content;
-    margin: 1rem auto;
+    width: fit-content;
+    font-size: 16px;
+    transform: translateY(8px) translateX(5px);
 }
 
-form label{
-    margin: 5px 0;
-    display: block;
-}
-
-form input , textarea{
-    width: 250px;
-    display: block;
-    /* height: 25px; */
+form input{
     border: 1px solid black;
-    border-radius: 2px;
-    /* text-transform: uppercase; */
-    padding: 5px;
+    height: 30px;
+    padding: 1px 5px;
+    outline: none;
+    width: 160px;
 }
 
-form .buttons {
-    display: flex;
-    justify-content: space-evenly;
+textarea{
+    height: 50px;
+    width: 340px;
+    border: 1px solid black;
+    padding: 0px 5px;
+    padding-bottom: 1px;
+    padding-top: 8px;
+    outline: none;
 }
 
-form button[type="submit"]{
-    margin-top: 0.8rem;
-    width: 45%;
-    height: 25px;
+button{
+    margin-top: 7px;
+    width: 170px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+button[type="submit"]{
     background-color: #28a745;
-    border: none;
-    padding: 3px 0;
-    border-radius: 5px;
 }
-
-form button[type="reset"]{
-    margin-top: 0.8rem;
-    width: 45%;
+button[type="reset"]{
     background-color: #dc3545;
-    border: none;
-    padding: 3px 0;
-    border-radius: 5px;
+}
+
+sup{
+    transform: translateY(0px);
+}
+
+.in{
+    display: flex;
+    gap: 10px;
 }
 
 
-.main{
+footer{
+    height: 25px;
+    background-color: #454545;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
     color: white;
+    width: 100%;
+}
+
+.creator{
+    margin: 0 auto;
 }
